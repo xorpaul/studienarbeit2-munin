@@ -1,0 +1,120 @@
+\documentclass[12pt, a4paper, headsepline]{article}
+\usepackage[utf8x]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx} 
+\usepackage[automark]{scrpage2}
+\usepackage{subfigure} 
+
+\usepackage{ae} 
+\pagestyle{scrheadings}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{endnotes}
+\usepackage{threeparttable}
+ 
+\usepackage{amssymb}
+\usepackage{floatflt}
+\usepackage{pdfpages}
+%\usepackage{fancyhd}
+
+\usepackage{listings}
+ \usepackage{verbatim} %Mehrzeilige Kommentare durch \begin{comment} mglich  ??
+\usepackage{blindtext} % Erzeugung von lngeren Textpassagen
+\usepackage{xcolor}  
+\usepackage{pdfpages}
+
+\usepackage{hyperref}
+
+\definecolor{hellgrau}{rgb}{0.9,0.9,0.9}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{darkblue}{rgb}{0,0,2}
+\lstset{inputencoding=utf8x, extendedchars=\true, numbers=left, numberstyle=\small, numbersep=5pt, basicstyle=\ttfamily\scriptsize, backgroundcolor=\color{hellgrau}, commentstyle=\color{darkgreen}, keywordstyle=\color{blue}, showspaces=false, showtabs=false, emph={String}, emphstyle=\color{blue}, emph={Boolean}, emphstyle=\color{blue}, showstringspaces=false}
+\author{Andreas Paul}
+\title{Munin - Benachrichtigungsdienst und graphische Visualisierung von Netzwerk- und Serviceüberwachunginformationen}
+
+%\pagestyle{fancy}
+%Funoten
+\usepackage[bottom,hang]{footmisc}
+\setlength{\footnotemargin}{0pt}
+\addto{\captionsngerman}{\renewcommand*{\listfigurename}{}}
+\addto{\captionsngerman}{\renewcommand*{\listtablename}{}}
+\makeatletter
+\renewcommand*\l@section{\@dottedtocline{1}{1.5em} {2.3em}}
+\renewcommand*\l@subsection{\@dottedtocline{2}{3.8 em}{3.2em}}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{ 7.0em}{4.1em}}
+\renewcommand*\l@paragraph{\@dottedtocline{4}{10em }{5em}}
+\renewcommand*\l@subparagraph{\@dottedtocline{5}{1 2em}{6em}}
+\renewcommand*\l@figure{\@dottedtocline{1}{1.5em}{ 2.3em}}
+\newcommand{\pictext}[1]{\glqq\texttt{#1}\grqq }
+%\newcommand{\brainmarker}[1]{\textbf{\textt{#1}}}
+% Abb. anstatt Abbildung verwenden %
+\renewcommand{\figurename}{Abb.}
+% Tab. anstatt Tabelle verwenden %
+\renewcommand{\tablename}{Tab.} 
+\renewcommand\subitem{\@idxitem \hspace*{30\p@}}
+ % Tiefe der Nummerierung einstellen %
+\setcounter{secnumdepth}{3}
+\setlength{\textheight}{610pt}
+\makeatother 
+\renewcommand{\refname}{Quellenverzeichnis} 
+\linespread{1.50} %zeilenabstand 1.5}
+\setlength{\headheight}{3.0\baselineskip}
+\setlength{\fboxsep}{3mm}
+\ihead{\includegraphics[width=0.2\textwidth]{bilder/dhbw.png}}
+%\chead{\rightmark}
+\chead{\leftmark}
+\cfoot{Andreas Paul - Forschungszentrum Karlsruhe}
+\begin{document}
+\setlength{\parindent}{0mm}
+\includepdf{Titelblatt.pdf}
+%\maketitle
+\thispagestyle{empty}
+\newpage 
+\renewcommand{\contentsname}{Inhalt}
+\tableofcontents
+\newpage
+\input{tex/preamble.tex}
+\newpage
+\input{tex/einleitung.tex} 
+\newpage
+%\input{tex/grundlagen.tex} \newpage
+\input{tex/architektur.tex} \newpage
+\input{tex/umsetzung.tex} \newpage
+\input{tex/nagios.tex} \newpage
+\input{tex/ausblick.tex} \newpage
+%\input{tex/architektur.tex} \newpage
+%\input{tex/architektur.tex} \newpage
+
+
+
+\section{Abbildungsverzeichnis}
+\listoffigures
+\newpage
+\section{Tabellenverzeichnis}
+\listoftables
+\newpage
+\renewcommand{\lstlistlistingname}{}
+\section{Codelistingverzeichnis}
+\lstlistoflistings
+\newpage
+\renewcommand{\refname}{} 
+\section{Literaturverzeichnis}
+\begin{thebibliography}{xxxxxx}
+	 \bibitem[Pro02]{Pro02}Ernst Probst (2002) "`Nordische Göttersagen"', \newline ISBN13: 978-3-936326-05-5, Einsichtnahme: 02.05.2009\\
+	 
+	 \bibitem[Munin08]{Mu08} Gabriele Pohl und Michael Renner (2008) 
+	 "`Munin - Graphisches Netzwerk- und System-Monitoring"', \newline ISBN13: 978-3-937514-48-2, Einsichtnahme: 05.04.2009\\
+	 
+	 \bibitem[Barth08]{Barth08}Wolfgang Barth (2008) "`Nagios - System- und Netzwerk-Monitoring"' 2. Auflage, \newline ISBN13: 978-3-937514-46-8, Einsichtnahme: 14.05.2009\\
+	 
+\end{thebibliography}
+\newpage
+\input{tex/anhang.tex}
+
+\end{document}
+
+
+

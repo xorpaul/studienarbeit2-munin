@@ -1,0 +1,51 @@
+\section{Architektur}
+
+Munin verwendet eine sogenannte Master-Node-Architektur, siehe Abbildung \ref{master-munin}.
+Hierbei emittelt jeder Rechner seine Messwerte selbst und der Master holt sich diese Daten mittels diverser Agenten, den sogenannten Munin-Nodes, ab.
+Deshalb wird der Master lediglich zur Verarbeitung der Überwachungsdaten genutzt.
+
+\begin{figure}[ht]
+	\centering
+	   \fbox{\includegraphics[width=0.9\textwidth]{bilder/master.png}}
+		\caption{Munin Master-Node-Konzept}
+		\label{master-munin}
+\end{figure}
+
+Der Munin-Master ist kein Daemon, sondern besteht aus Skripten, die in regelmäßigen Zeitabstanden als Cron-Job ablaufen:
+\begin{itemize}
+\item \pictext{munin-update} dient zum Abrufen der Messwerte bei den zu überwachenden Munin-Nodes. Hierbei wird auch die Datenbank aktualisiert oder ggf. erzeugt.
+\item \pictext{munin-limits} vergleicht die Messwerte mit ggf. vorgegebenen Schwellwerten und versendet bei Bedarf Benachrichtigungen, wenn Werte das Warnlevel überschreiten, in kritische Bereich gelangen oder wenn Entwarnung gegeben werden kann.
+\item \pictext{munin-graph} erzeugt die Munin-Graphen.
+\item \pictext{munin-html} dient zum Erstellen der HTML-Seiten der Munin-Übersicht.
+\end{itemize}
+
+Standardmäßig werden diese Skripte im fünf Minuten Rythmus aufgerufen.
+Dabei baut der Munin-Master viele parallele - im Ausgangszustand unverschlüsselte - TCP-Verbindungen zu den diversen Node-Hosts auf.
+
+Zusätzlich wird für den Betrieb des Munin-Masters auf einem Rechner folgende vorab konfigurierte Software vorausgesetzt:
+
+\begin{itemize}
+\item einen Webserver, der Zugang zu den Graphen verschafft.
+\item ein Programm mit dem sich die Warnmeldungen versenden lassen. Beispielsweise einen SMTP-Server oder einen Nagios Service Check Acceptor (NSCA), der dafür sorgt, dass der Nagios-Server Alarm schlägt.
+\item Werkzeuge und Bibliotheken des \textit{RRDtool}-Projekts\footnote{http://oss.oetiker.ch/rrdtool/} zur Speicherung der Daten und zum Zeichnen der Munin-Graphen.
+\end{itemize}
+
+
+\input{tex/daten.tex}
+
+\input{tex/rrd.tex}
+
+\input{tex/plugins.tex}
+
+
+
+
+
+
+
+
+
+
+
+
+
