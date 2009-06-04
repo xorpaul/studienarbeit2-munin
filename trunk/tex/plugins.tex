@@ -64,10 +64,10 @@ Die MIB-Struktur ist folgendermaßen aufgebaut:
 \begin{figure}[ht]
 	\centering
 	   \fbox{\includegraphics[width=0.95\textwidth]{bilder/mib.png}}
-		\caption{Struktur der Management Information Base (MIB)}
+		\caption[Struktur der Management Information Base (MIB)]{Struktur der Management Information Base (MIB)\protect\footnotemark}
 		\label{munin-mib}
 \end{figure}
-
+\footnotetext{Quelle: \cite{Mu08} S. 156}
 Dadurch können die SNMP-Plugins den gewünschten Wert über das Netzwerk abfragen, ohne, dass ein lokal auf dem Munin-Node installiertes Programm notwendig ist.
 
 \newpage
@@ -77,9 +77,10 @@ Einen beispielhaften Zugriff auf SNMP-fähige Geräte wird in Abbildung \ref{mun
 \begin{figure}[ht]
 	\centering
 	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/snmp.png}}
-		\caption{Beispielhafter Zugriff auf SNMP-fähige Geräte}
+		\caption[Beispielhafter Zugriff auf SNMP-fähige Geräte]{Beispielhafter Zugriff auf SNMP-fähige Geräte\protect\footnotemark}
 		\label{munin-snmp}
 \end{figure}
+\footnotetext{Quelle: \cite{Mu08} S. 156}
 
 Munin verwendet für SNMP-Plugins eine besondere Namenskonvention.
 Alle Plugins dieser Art besitzen den Präfix \textit{snmp\_} auf den die IP-Adresse des SNMP-fähigen Gerätes folgt.

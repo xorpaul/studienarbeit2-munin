@@ -6,10 +6,11 @@ Deshalb wird der Master lediglich zur Verarbeitung der Überwachungsdaten genutz
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.9\textwidth]{bilder/master.png}}
-		\caption{Munin Master-Node-Konzept}
+	   \fbox{\includegraphics[width=0.85\textwidth]{bilder/master.png}}
+		\caption[Munin Master-Node-Konzept]{Munin Master-Node-Konzept\protect\footnotemark}
 		\label{master-munin}
 \end{figure}
+\footnotetext{Quelle: \cite{Mu08} S. 20}
 
 Der Munin-Master ist kein Daemon, sondern besteht aus Skripten, die in regelmäßigen Zeitabstanden als Cron-Job ablaufen:
 \begin{itemize}

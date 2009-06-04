@@ -4,7 +4,6 @@ Daher scheidet der Zugriff per SQL, Texteditor oder über einen Netzwerkport aus
 Um auf Round-Robin-Datenbanken zuzugreifen müssen die dafür entwickelten RRD-Tools verwendet werden.
 Diese nehmen die aktuellen Messwerte entgegen und schreiben für jeden Messinterval einen Wert in eine Binärdatei.
 Aus den gesammelten Datenbestand können dann die Werte visualisiert oder Statistiken erzeugt werden.
-
 Dieser Datenbestand besteht aus sogenannten Round-Robin-Archives.
 Dabei handelt es sich um Ableitungen aus den Primärdateien, die mit Hilfe statistischer Auswertungen ermittelt und für die festgelegten Zeitintervalle komprimiert werden.
 Die gesamte Anzahl der gespeicherten Datenwerte steht bereits bei der Erzeugung der RRD fest.
@@ -12,10 +11,11 @@ Da auch zu Beginn alle Werte mit Platzhaltern aufgefüllt werden, bleibt die Gr�
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.79\textwidth]{bilder/rrd.png}}
-		\caption{Modell der Round-Robin-Datenbanken}
+	   \fbox{\includegraphics[width=0.76\textwidth]{bilder/rrd.png}}
+		\caption[Modell der Round-Robin-Datenbanken]{Modell der Round-Robin-Datenbanken\protect\footnotemark}
 		\label{rrd-munin}
 \end{figure}
+\footnotetext{Quelle: \cite{Mu08} S. 38}
 
 Munin verwendet dieses RRAs als hochauflösende Archive, die die Messwerte des aktuellen Tages, eine etwas komprimierte Fassung zur Darstellung der Daten der laufenden Woche sowie - noch stärker komprimiert - die Daten für den aktuellen Monat und das Jahr enthalten.
 %Siehe hierfür Abbildung [?].
