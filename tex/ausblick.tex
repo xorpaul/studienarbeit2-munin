@@ -1,0 +1,14 @@
+\section{Zusammenfassung und Ausblick}
+Die von Munin zusammengetragenen Informationen sind dank der einfachen Installation der Anwendung und der gewünschten Munin-Plugins sehr schnell in nützliche Graphen umgewandelt und erweisen sich dank der verschiedenen Zeitauflösung als sehr nützliches Element in der Langzeitüberwachung.
+
+Auch die große Anzahl an bereits bei der Installation verfügbaren Plugins lassen sich dank einer automatischen Testfunktion, siehe Abbildung \ref{suggest} in Kapitel \ref{umsetzung}, schnell und unkompliziert einbinden.
+
+Sollte sich doch nicht das passende Plugin in dieser Sammlung finden, gibt es immernoch die Möglichkeit auf der MuninExchange Internetseite fündig zu werden.
+Dort befinden sich von anderen Munin-Benutzern entwickelte und veröffentlichte Plugins, die auch weiter vom Benutzer auf die eigenen Bedürfnisse angepasst werden können.
+Da die Plugins jedoch recht einfach aufgebaut sind, lassen sich auch schnell und einfach eigene Kreationen entwerfen, die sofort automatisch nach der Verlinkung zum Service-Verzeichnis in das Webinterface eingefügt werden.
+
+Munin legt großen Wert auf die Visualisierung der Überwachungsinformationen und weniger auf eine komplexe, umfangreiche Überwachungs- und Alarmierungslogik.
+Dafür empfiehlt es sich für diesen Zweck Nagios zu verwenden und Munin in das Nagios Überwachungssytem einzubinden.
+Denn sowohl Nagios als auch Munin bieten die notwendigen Werkzeuge um dies zu realisieren.
+Dabei muss erwähnt werden, dass auch mit Nagios die Visualisierung der Performancedaten der Plugins möglich ist, so dass Munin als überflüssig gesehn werden könnte.
+Jedoch stellt sich die Konfiguration und Anpassung von Nagios und dem Visualisierung-Addon für den unerfahrenen Benutzer als deutlich schwieriger und aufwändiger heraus als der Aufbau eines ähnlichen Munin Überwachungssystems.

@@ -1,0 +1,17 @@
+\BOOKMARK [1][-]{section.1}{Einleitung}{}
+\BOOKMARK [1][-]{section.2}{Architektur}{}
+\BOOKMARK [2][-]{subsection.2.1}{Einsammeln der Daten}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{Round-Robin-Datenbanken}{section.2}
+\BOOKMARK [2][-]{subsection.2.3}{Einbindung und Konfiguration der Plugins}{section.2}
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Wildcard-Plugins}{subsection.2.3}
+\BOOKMARK [3][-]{subsubsection.2.3.2}{SNMP-Plugins}{subsection.2.3}
+\BOOKMARK [1][-]{section.3}{Umsetzung}{}
+\BOOKMARK [2][-]{subsection.3.1}{Erstellen eines eigenen Munin-Plugins}{section.3}
+\BOOKMARK [2][-]{subsection.3.2}{Zusammenspiel mit Nagios}{section.3}
+\BOOKMARK [2][-]{subsection.3.3}{Vergleich der Visualisierung mit Nagios}{section.3}
+\BOOKMARK [1][-]{section.4}{Zusammenfassung und Ausblick}{}
+\BOOKMARK [1][-]{section.5}{Abbildungsverzeichnis}{}
+\BOOKMARK [1][-]{section.6}{Tabellenverzeichnis}{}
+\BOOKMARK [1][-]{section.7}{Codelistingverzeichnis}{}
+\BOOKMARK [1][-]{section.8}{Literaturverzeichnis}{}
+\BOOKMARK [1][-]{section.9}{Anhang}{}
