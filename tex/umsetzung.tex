@@ -58,7 +58,7 @@ Da nur der Speicherplatzbedarf des Ordners interessiert, wird der zweite Teil de
 Eine für Munin verwertbare Ausgabe, wie in Abbildung \ref{df-munin}, muss einen internen Variablennamen, in diesem Fall \textit{dir}  gefolgt von dem Suffix \textit{.value} besitzen.
 Daraus ergibt sich folgendes kurzes BASH-Skript:
 
-\begin{lstlisting}[captionpos=b, caption=Speicherplatzbedarf eines Verzeichnises, label=du, breaklines = true, language=bash]
+\begin{lstlisting}[captionpos=b, caption=Speicherplatzbedarf eines Verzeichnisses, label=du, breaklines = true, language=bash]
 #!/bin/bash
 # Plugin to monitor the size of the specified directory
 #
@@ -105,7 +105,7 @@ Folgende Informationen werden für das Testplugin benötigt:
 Der dafür benötigte Quelltext wird vor der eigentlichen Messwertermittlung eingeschoben, da sich das Skript ansonsten zuvor mit \textit{exit} beendet.
 Das fertige Skript sieht dann folgendermaßen aus:
 
-\begin{lstlisting}[captionpos=b, caption=Fertiges Skript für den Speicherplatzbedarf eines Verzeichnises, label=du, breaklines = true, language=bash]
+\begin{lstlisting}[captionpos=b, caption=Fertiges Skript für den Speicherplatzbedarf eines Verzeichnisses, label=du, breaklines = true, language=bash]
 #!/bin/bash
 # Plugin to monitor the size of the specified directory
 #
