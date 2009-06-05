@@ -3,16 +3,16 @@
 \contentsline {section}{\numberline {2}Aufgabenstellung}{5}{section.2}
 \contentsline {section}{\numberline {3}Architektur}{6}{section.3}
 \contentsline {subsection}{\numberline {3.1}Einsammeln der Daten}{8}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Round-Robin-Datenbanken}{11}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Round-Robin-Datenbanken}{12}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Einbindung und Konfiguration der Plugins}{14}{subsection.3.3}
 \contentsline {subsubsection}{\numberline {3.3.1}Wildcard-Plugins}{15}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}SNMP-Plugins}{17}{subsubsection.3.3.2}
-\contentsline {section}{\numberline {4}Umsetzung}{20}{section.4}
-\contentsline {subsection}{\numberline {4.1}Erstellen eines eigenen Munin-Plugins}{22}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Zusammenspiel mit Nagios}{26}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Vergleich der Visualisierung mit Nagios}{28}{subsection.4.3}
-\contentsline {section}{\numberline {5}Zusammenfassung und Ausblick}{30}{section.5}
-\contentsline {section}{\numberline {6}Abbildungsverzeichnis}{31}{section.6}
-\contentsline {section}{\numberline {7}Tabellenverzeichnis}{32}{section.7}
-\contentsline {section}{\numberline {8}Codelistingverzeichnis}{33}{section.8}
-\contentsline {section}{\numberline {9}Literaturverzeichnis}{34}{section.9}
+\contentsline {subsubsection}{\numberline {3.3.2}SNMP-Plugins}{16}{subsubsection.3.3.2}
+\contentsline {section}{\numberline {4}Umsetzung}{19}{section.4}
+\contentsline {subsection}{\numberline {4.1}Erstellen eines eigenen Munin-Plugins}{21}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Zusammenspiel mit Nagios}{25}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Vergleich der Visualisierung mit Nagios}{27}{subsection.4.3}
+\contentsline {section}{\numberline {5}Zusammenfassung und Ausblick}{29}{section.5}
+\contentsline {section}{\numberline {6}Abbildungsverzeichnis}{30}{section.6}
+\contentsline {section}{\numberline {7}Tabellenverzeichnis}{31}{section.7}
+\contentsline {section}{\numberline {8}Codelistingverzeichnis}{32}{section.8}
+\contentsline {section}{\numberline {9}Literaturverzeichnis}{33}{section.9}
