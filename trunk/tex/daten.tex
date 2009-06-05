@@ -1,16 +1,20 @@
 \subsection{Einsammeln der Daten}
 Das periodisch ausgeführte Perlskript \pictext{munin-update} kümmert sich um das Abholen neuer Messwerte von den Nodes.
-Dazu wird als Erstes die Datei \pictext{munin.conf} geparst, um die zu überwachenden Nodes zu ermitteln.
+Dazu wird zuerst die Datei \pictext{munin.conf} geparst, um die zu überwachenden Nodes zu ermitteln.
 
 Ein Eintrag für einen Node-Host in dieser Datei sieht folgendermaßen aus:
 
 
 \begin{lstlisting}[captionpos=b, caption=Beispielhafte Definition eines Munin-Nodes, label=nodedef, breaklines = true, language=bash]
-[munin.example.net]
-	address 			localhost
+# Definition des Munin-Nodes unilabad
+
+[unilabad]
+	address 			unilabad
 	port				6088
+	
 	df.warning			20
 	df.critical			10
+	
 	contacts			paul
 	ping_unilabad.contacts		lang
 \end{lstlisting}
@@ -24,7 +28,7 @@ Dafür wird der Name des Plugins mit den Suffixen \textit{.warning} und \textit{
 Im obigen Beispiel wird \pictext{df} für den freien Festplattenspeicherplatz mit dem Schwellwert von 20\% für Warnungen und 10\% als kritischen Wert für den Host definiert.
 
 Unter dem Attribut \textit{contacts} werden die Kontaktnamen angegeben, die bei einer Überschreitung eines Schwellwerteres kontaktiert werden sollen.
-Hierbei gibt es zu sagen, dass diese Überschreitung bei egal welchem Plugin für die Benachrichtigung dieser Kontakte führt.
+%Hierbei gibt es zu sagen, dass diese Überschreitung bei egal welchem Plugin für die Benachrichtigung dieser Kontakte führt.
 
 Soll ein Kontakt nur bei einem bestimmten Plugin benachrichtigt werden, muss es analog zu der Schwellwertdefinition mit dem Pluginnamen und dem Suffix \textit{.contacts} explizit angegeben werden. Hier wird der Kontakt \textit{lang} nur bei einer Überschreitung des Plugins \textit{ping\_unilabad} benachrichtigt.
 Bei diesem Plugin wird der Host \textit{unilabad} mit einem Ping überwacht.
@@ -38,7 +42,7 @@ Hierfür erzeugt Munin  für jeden in der Konfigurationsdatei angegebenen Rechne
 Das parallele Abarbeiten hat den Vorteil, dass die Abfrage nicht bis zum Timeout hängen bleibt, wenn ein einzelner Munin-Node nicht erreichbar ist.
 Jedoch verschlingt das Erzeugen eines eigenen Prozesses für jeden Node bei vielen zu überwachenden Rechnern viele Ressourcen, so dass bei größeren Umgebungen viel Arbeitsspeicher und schnelle Multicoreprozessoren unabdingbar sind.
 
-Ein beispielhafte Ausführung eines Munin-Plugins für die Plattenbelegung gibt folgende Werte zurück:
+Eine beispielhafte Ausführung eines Munin-Plugins für die Plattenbelegung gibt folgende Werte zurück:
 
 \begin{figure}[ht]
 	\centering
@@ -47,7 +51,7 @@ Ein beispielhafte Ausführung eines Munin-Plugins für die Plattenbelegung gibt 
 		\label{df-munin}
 \end{figure}
 \newpage
-Wenn man diese Werte mit den realen Werten vergleicht, erkennt man, dass das Munin-Plugin einfach die Prozentwerte des verbrauchten Speicherplatzes als Wert verwendet.
+Wenn man diese Werte mit den realen Werten vergleicht, erkennt man, dass das Munin-Plugin die Prozentwerte des verbrauchten Speicherplatzes als Messwerte verwendet.
 
 \begin{figure}[ht]
 	\centering
@@ -66,7 +70,7 @@ Aus diesen Werten erstellt \pictext{munin-graph} automatisch folgenden Graphen:
 \end{figure}
 
 Die über das Netzwerk ermittelten Werte landen nach entsprechender Bearbeitung in RRD-Dateien. 
-Im Skript \pictext{munin-update} ist fest eingetragen, welche zeitliche Auflösung die Datenbasis und dadurch auch die Munin-Graphen aufweisen.
+Im Skript \pictext{munin-update} ist eingetragen, welche zeitliche Auflösung die Datenbasis und dadurch auch die Munin-Graphen aufweisen.
 
 Das bedeutet, dass für einen Messpunkt in der Wochenübersicht 30 Minuten - also sechs Messwerte - benötigt werden und für die Monatübersicht werden bereits 48 Messpunkte bzw. zwei Stunden benötigt. Siehe hierfür Tabelle \ref{timeres-tab}.
 
@@ -96,7 +100,7 @@ bis zu 450 Tagen & 1 Tag \\
 \footnotetext{Quelle: \cite{Mu08} S. 24}
 
 
-In der Abbildung \ref{4times} konnte der \pictext{munin-node} noch keinen kompletten Tag Messwerte sammeln, weshalb die Jahresübersicht noch keine Messwerte liefern kann und nur mit dem Platzhalterwert \textit{nan} (für nicht defniert) aufgefüllt ist.
+In der Abbildung \ref{4times} konnte der \pictext{munin-node} noch keinen kompletten Tag Messwerte sammeln, weshalb die Jahresübersicht noch keine Messwerte liefern kann und nur den Platzhalterwert \textit{nan} (für nicht definiert) enthält.
 
 \begin{figure}[ht]
 	\centering

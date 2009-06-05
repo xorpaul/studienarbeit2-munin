@@ -1,8 +1,9 @@
 \section{Umsetzung}
 \label{umsetzung}
-Wenn die verwendete Linux-Distributon einen Paketmanager unterstützt verläuft die Installation der Anwendung einfach und ohne Probleme.
-Die hier als Testserver eingesetzte Ubuntu-Distribution verknüpft automatisch die Munin-Webseiten mit dem Webserver und verlinkt bereits die ersten verwendbare Munin-Plugins.
-Deshalb sind sofort nach der Installation einige Graphen verfügbar, siehe Abbildung \ref{ootb}.
+%Wenn die verwendete Linux-Distributon einen Paketmanager unterstützt verläuft die Installation der Anwendung einfach und ohne Probleme.
+Die Installation der Anwendung verläuft einfach und ohne Probleme.
+Die hier als Testserver eingesetzte Ubuntu-Distribution verknüpft automatisch die Munin-Webseiten mit dem Webserver und verlinkt bereits die ersten verwendbaren Munin-Plugins.
+Daher sind sofort nach der Installation einige Graphen verfügbar, siehe Abbildung \ref{ootb}.
 
 \begin{figure}[ht]
 	\centering
@@ -14,12 +15,12 @@ Deshalb sind sofort nach der Installation einige Graphen verfügbar, siehe Abbil
 Dabei untersucht Munin das verwendete System während der Installation nach verfügbaren Überwachungssobjekten.
 Zum Beispiel wurde in der oberen Abbildung von Munin der Mailserver \textit{postfix} gefunden und automatisch in eine eigene Kategorie in das Webinterface eingepflegt.
 
-Wie bereits in Kapitel \ref{plugins} beschrieben, können weitere mitgelieferte Munin-Plugins in das entsprechende Service-Verzeichnis verlinkt und dabei ggf. mit Parametern ausgestatten werden, damit Munin zusätzlich diese Graphen erstellt und deren Werte aktualisiert und abspeichert.
+Wie bereits in Kapitel \ref{plugins} beschrieben können weitere mitgelieferte Munin-Plugins in das entsprechende Service-Verzeichnis verlinkt und dabei ggf. mit Parametern ausgestatten werden, damit Munin zusätzlich diese Graphen erstellt und deren Werte aktualisiert und abspeichert.
 
 Dabei gibt es noch eine zusätzliche Hilfe durch die Plugins, sofern sie sich an den Munin-Plugin-Standard halten.
-Solche Skripte überprüfen selbständig bei ihrer Ausführung aufgrund welcher Bedingung sie nicht genutzt werden können oder sogar mit welchen Parametern sie funktionieren würden.
+Solche Skripte überprüfen selbständig bei ihrer Ausführung weshalb sie nicht genutzt werden können oder sogar mit welchen Parametern sie funktionieren würden.
 
-Diese hilfreiche Unterstützung bekommt man durch die Ausführung des folgenden Befehls:
+Diese hilfreiche Unterstützung erhält man durch die Ausführung des folgenden Befehls:
 
 \begin{figure}[ht]
 	\centering
@@ -28,21 +29,21 @@ Diese hilfreiche Unterstützung bekommt man durch die Ausführung des folgenden 
 		\label{suggest}
 \end{figure}
 
-Anhand dieser Informationen kann man herausfinden, weshalb ein Plugin nicht richtig funktioniert oder nicht automatisch bei der Installation hinzugefügt wurde.
+Anhand dieser Informationen kann herausgefunden werden, weshalb ein Plugin nicht richtig funktioniert oder nicht automatisch bei der Installation hinzugefügt wurde.
 \newpage
 \subsection{Erstellen eines eigenen Munin-Plugins}
 
 Die zum Zeitpunkt dieser Arbeit mitgelieferten 132 Munin-Plugins unterstützen eine Vielzahl an verschiedenen Überwachungsmöglichkeiten.
 Jedoch kann es auch sein, dass ein gewünschtes Element oder Detail nicht von den mitgelieferten Plugins beachtet wird.
-Dann bietet es sich an auf der MuninExchange\footnote{http://muninexchange.projects.linpro.no/} Internetseite nach bereits entwickelten passenden Munin-Plugins zu stöbern.
+Dann bietet es sich an auf der MuninExchange\footnote{http://muninexchange.projects.linpro.no/} Internetseite nach bereits entwickelten, passenden Munin-Plugins zu stöbern.
 
 Eine weitere Möglichkeit besteht darin das gewünschte Skript selbst zu entwickeln.
-Da der Aufbau eines Munin-Plugins recht primitiv und klein ausfallen kann, benötigt man keine umfangreiche Programmierkenntnisse um erfolgreich ein funktionierendes Skript zu erstellen.
+Da der Aufbau eines Munin-Plugins recht primitiv und klein ausfallen kann, benötigt man keine umfangreichen Programmierkenntnisse um erfolgreich ein funktionierendes Skript zu entwickeln.
 
 Im folgenden soll als Beispiel eine einfache Speicherplatzüberwachung eines Ordners mit Munin realisiert werden.
 
 Dafür wird das bereits vorhandene Systemtool \textit{du} verwendet.
-Den Speicherplatzbedarf eines Ordners lässt sich dann folgendermaßen ermitteln:
+Der Speicherplatzbedarf eines Ordners lässt sich dann folgendermaßen ermitteln:
 
 \begin{figure}[ht]
 	\centering
@@ -52,11 +53,11 @@ Den Speicherplatzbedarf eines Ordners lässt sich dann folgendermaßen ermitteln
 \end{figure}
 
 Mit dem ersten Befehl wird die Verzeichnisgröße des Ordners \textit{/test} gemessen.
-Der dabei ermittelte Rückgabewert besitzt KByte als Einheit; da es sich aber um einen etwas größeren Ordner handelt und damit der spätere Munin-Graph nicht zu unübersichtlich wird, bietet es sich an diese Einheit mit dem zweiten Befehl durch den zusätzlichen Parameter \textit{-sm} in MByte umzurechnen.
-Da nur der Speicherplatzbedarf des Ordners interessiert, wird der zweite Teil der Ausgabe einfach mit dem \textit{cut}-Befehl abgeschnitten.
+Der dabei ermittelte Rückgabewert besitzt KByte als Einheit; da es sich aber um einen etwas größeren Ordner handelt und damit der spätere Munin-Graph nicht zu unübersichtlich wird, bietet es sich an, diese Einheit mit dem zweiten Befehl durch den zusätzlichen Parameter \textit{-sm} in MByte umzurechnen.
+Da nur der Speicherplatzbedarf des Ordners interessiert, wird der zweite Teil der Ausgabe mit dem \textit{cut}-Befehl abgeschnitten.
 
-Eine für Munin verwertbare Ausgabe, wie in Abbildung \ref{df-munin}, muss einen internen Variablennamen, in diesem Fall \textit{dir}  gefolgt von dem Suffix \textit{.value} besitzen.
-Daraus ergibt sich folgendes kurzes BASH-Skript:
+Eine für Munin verwertbare Ausgabe, wie in Abbildung \ref{df-munin}, muss einen internen Variablennamen, in diesem Fall \textit{dir}, gefolgt von dem Suffix \textit{.value}, besitzen.
+Daraus ergibt sich folgendes BASH-Skript:
 
 \begin{lstlisting}[captionpos=b, caption=Speicherplatzbedarf eines Verzeichnisses, label=du, breaklines = true, language=bash]
 #!/bin/bash
@@ -64,7 +65,6 @@ Daraus ergibt sich folgendes kurzes BASH-Skript:
 #
 # directory to check
 DIR="/test"
-#################################################################
 
 echo -n "dir.value "
 if [ -d $DIR ]; then #check if the dir exists
@@ -77,7 +77,7 @@ else
 fi
 \end{lstlisting}
 
-Nach der Verlinkung in das entsprechende Service-Verzeichnis gibt das Auführen des Skriptes folgende Ausgabe:
+Nach der Verlinkung in das entsprechende Service-Verzeichnis gibt das Skriptes folgende Ausgabe zurück:
 
 \begin{figure}[ht]
 	\centering
@@ -88,8 +88,8 @@ Nach der Verlinkung in das entsprechende Service-Verzeichnis gibt das Auführen 
 
 Mit dieser Ausgabe kann \pictext{munin-update} die Messwerte ermitteln und speichern.
 
-Für die Visualisierung dieser Messwerte benötigt Munin jedoch zusätzlich noch Informationen, wie der Graph auszusehen hat.
-Für diese Informationen ruft Munin die Plugins mit dem Parameter \textit{config} auf; deshalb muss auch dieses Plugins die entsprechende Werte bei diesem Parameteraufruf liefern.
+Für die Visualisierung dieser Messwerte benötigt Munin zusätzlich noch Informationen, wie der Graph auszusehen hat.
+Um diese Informationen zu erhalten, ruft Munin die Plugins mit dem Parameter \textit{config} auf; daher muss das Plugin die entsprechende Werte bei diesem Parameteraufruf liefern.
 
 Folgende Informationen werden für das Testplugin benötigt:
 
@@ -111,7 +111,6 @@ Das fertige Skript sieht dann folgendermaßen aus:
 #
 # directory to check
 DIR="/test"
-#################################################################
 
 if [ "$1" = "config" ]; then
 	echo "graph_title Directory size: $DIR"
@@ -135,7 +134,7 @@ else
 fi
 \end{lstlisting}
 
-Nach dem Neustarten des \pictext{munin-node}-Daemons wird dann folgender Graph im Webinterface angezeigt:
+Nach dem Neustarten des \pictext{munin-node}-Daemons wird folgender Graph im Webinterface angezeigt:
 
 \begin{figure}[ht]
 	\centering

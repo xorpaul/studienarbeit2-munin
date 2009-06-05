@@ -2,13 +2,14 @@
 
 \subsection{Einbindung und Konfiguration der Plugins}
 \label{plugins}
-Munin bringt bereits eine Sammlung von Plugins bei der Installation mit.
+Bei der Installation von Munin wird bereits eine Sammlung von Plugins mitgeliefert.
+%Munin bringt bereits eine Sammlung von Plugins bei der Installation mit.
 Diese befinden sich in einem Bibliotheksverzeichnis.
 Wenn diese Plugins verwendet werden sollen um einen Node zu überwachen, müssen sie in einem Service-Verzeichnis verlinkt sein, damit der Daemon \pictext{munin-node} darauf zugreifen kann.
-Dieser Daemon muss sich auf dem zu überwachenden Host befinden und dient als "`Agent"' für den Munin-Master, da der Daemon auf seinem Port nach Aufforderungen durch den Master horcht.
+Dieser Daemon muss sich auf dem zu überwachenden Host befinden und dient als "`Agent"' für den Munin-Master, da der Daemon auf seinem Port nach Aufforderungen durch den Master lauscht.
 Ein solcher Daemon ist für Linux und für Windows verfügbar, wobei der für Windows weniger Funktionen bietet.
-Die einzelnen Tests laufen auf den Nodes unabhängig von der Abfrage des Masters.
-Wenn der Master die aktuellen Daten nicht abholt, wird dieser Datenbestand durch die neuen Informationen ausgetauscht und werden bei der nächsten Anfrage an den Master gesendet.
+Die einzelnen Tests laufen auf den Nodes; unabhängig von der Abfrage des Masters.
+Wenn der Master die aktuellen Daten nicht abholt, wird dieser Datenbestand durch die neuen Informationen ausgetauscht und bei der nächsten Anfrage an den Master gesendet.
 
 Auf den Graphen im Webinterface wird dieser Zeitraum als Lücke dargestellt, siehe Abbildung \ref{gap}.
 
@@ -21,7 +22,7 @@ Auf den Graphen im Webinterface wird dieser Zeitraum als Lücke dargestellt, sie
 
 Der \pictext{munin-node}-Daemon kannn so konfiguriert werden, dass er nur auf Anfragen von einer bestimmten IP reagiert, einen anderen Port verwendet oder nur auf einer bestimmten IP lauscht.
 
-Damit der Daemon weiss, welche Daten er liefern muss, wird das zuvor erwähnte Service-Verzeichnis verwendet.
+Damit der Daemon weiß, welche Daten er liefern muss, wird das zuvor erwähnte Service-Verzeichnis verwendet.
 Hier werden Verlinkungen zu den eigentlichen Plugins gespeichert.
 Eine beispielhafte Verlinkung wird in Abbildung \ref{lns} gezeigt.
 
@@ -35,7 +36,7 @@ Eine beispielhafte Verlinkung wird in Abbildung \ref{lns} gezeigt.
 \subsubsection{Wildcard-Plugins}
 \label{wildcard}
 Falls der Name des Plugins mit einem Unterstrich endet, handelt es sich um ein sogenanntes \textit{Wildcard}-Plugin.
-Solche Plugins erwarten in der Bezeichnung des Links spezifische Parameter für die Ausführung der Tests.
+Alle Plugins dieser Kategorie erwarten in der Bezeichnung des Links spezifische Parameter für die Ausführung der Tests.
 
 Beispielsweise verwendet das zuvor verwendete Plugin \textit{ping\_} als Parameter den Namen oder die IP-Adresse des anzupingenden Hosts.
 Die Verlinkung aus dem Bibliotheksverzeichnis in das Service-Verzeichnis würde dann folgendermaßen ausschauen:
@@ -46,7 +47,7 @@ Die Verlinkung aus dem Bibliotheksverzeichnis in das Service-Verzeichnis würde 
 		\label{lnw}
 \end{figure}
 
-Hier wird der Host \textit{localhost} angepingt und diese Daten auf dem Master gespeichert und später in einem Graphen visualisiert.
+Hier wird der Host \textit{unilabad} angepingt und das Ergebnis auf dem Master gespeichert und später in einem Graphen visualisiert.
 
 \newpage
 
@@ -84,7 +85,7 @@ Einen beispielhaften Zugriff auf SNMP-fähige Geräte wird in Abbildung \ref{mun
 
 Munin verwendet für SNMP-Plugins eine besondere Namenskonvention.
 Alle Plugins dieser Art besitzen den Präfix \textit{snmp\_} auf den die IP-Adresse des SNMP-fähigen Gerätes folgt.
-Im folgenden Beispiel wird die Plattenbelegung eines entfernten Knotens überwacht.
+Im folgenden Beispiel wird die Speicherplatzauslastung eines entfernten Knotens überwacht.
 
 \begin{figure}[ht]
 	\centering
