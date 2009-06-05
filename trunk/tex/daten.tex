@@ -7,7 +7,6 @@ Ein Eintrag für einen Node-Host in dieser Datei sieht folgendermaßen aus:
 
 \begin{lstlisting}[captionpos=b, caption=Beispielhafte Definition eines Munin-Nodes, label=nodedef, breaklines = true, language=bash]
 # Definition des Munin-Nodes unilabad
-
 [unilabad]
 	address 			unilabad
 	port				6088
@@ -42,12 +41,11 @@ Nach der Ermittlung der Nodes werden die Hosts in der Regel parallel nach den ne
 Hierfür erzeugt Munin  für jeden in der Konfigurationsdatei angegebenen Rechnern einen eigenen Prozess.
 Das parallele Abarbeiten hat den Vorteil, dass die Abfrage nicht bis zum Timeout hängen bleibt, wenn ein einzelner Munin-Node nicht erreichbar ist.
 Jedoch verschlingt das Erzeugen eines eigenen Prozesses für jeden Node bei vielen zu überwachenden Rechnern viele Ressourcen, so dass bei größeren Umgebungen viel Arbeitsspeicher und schnelle Multicoreprozessoren unabdingbar sind.
-
 Eine beispielhafte Ausführung eines Munin-Plugins für die Plattenbelegung gibt folgende Werte zurück:
 
 \begin{figure}[ht]
 	\centering
-	   \fbox{\includegraphics[width=0.6\textwidth]{bilder/df-munin.png}}
+	   \fbox{\includegraphics[width=0.5\textwidth]{bilder/df-munin.png}}
 		\caption{Beispielhafte Ausführung eines Munin-Plugins}
 		\label{df-munin}
 \end{figure}

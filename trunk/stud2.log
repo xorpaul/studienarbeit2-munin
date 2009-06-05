@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  5 JUN 2009 12:10
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.1.26)  5 JUN 2009 13:40
 entering extended mode
  %&-line parsing enabled.
 **stud2.tex
@@ -492,7 +492,7 @@ File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
 ) [3])
-(./tex/einleitung.tex) <bilder/dhbw.png, id=128, 130.4875pt x 63.23625pt>
+(./tex/einleitung.tex) <bilder/dhbw.png, id=129, 130.4875pt x 63.23625pt>
 File: bilder/dhbw.png Graphic file (type png)
 
 <use bilder/dhbw.png>
@@ -506,7 +506,7 @@ Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
 [5] (./tex/architektur.tex
-<bilder/master.png, id=138, 254.6313pt x 285.2256pt>
+<bilder/master.png, id=139, 254.6313pt x 285.2256pt>
 File: bilder/master.png Graphic file (type png)
  <use bilder/master.png>
 File: bilder/dhbw.png Graphic file (type png)
@@ -567,17 +567,24 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[9] <bilder/df.png, id=185, 582.175pt x 140.525pt>
+[9 <./bilder/df-munin.png (PNG copy)>]
+<bilder/df.png, id=186, 582.175pt x 140.525pt>
 File: bilder/df.png Graphic file (type png)
  <use bilder/df.png>
-<bilder/df-graph.png, id=186, 496.85625pt x 349.305pt>
+<bilder/df-graph.png, id=187, 496.85625pt x 349.305pt>
 File: bilder/df-graph.png Graphic file (type png)
 
 <use bilder/df-graph.png>
+File: bilder/dhbw.png Graphic file (type png)
+ <use bilder/dhbw.png>
+Overfull \vbox (0.82524pt too high) has occurred while \output is active []
+
+
+[10 <./bilder/df.png (PNG copy)> <./bilder/df-graph.png (PNG copy)>]
 ! Undefined control sequence.
 <recently read> \bottomrule 
                             
-l.95 \bottomrule
+l.93 \bottomrule
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -585,13 +592,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-File: bilder/dhbw.png Graphic file (type png)
-<use bilder/dhbw.png>
-Overfull \vbox (0.82524pt too high) has occurred while \output is active []
-
-
-[10 <./bilder/df-munin.png (PNG copy)> <./bilder/df.png (PNG copy)>]
-<bilder/4times.png, id=199, 997.7275pt x 562.1pt>
+<bilder/4times.png, id=198, 997.7275pt x 562.1pt>
 File: bilder/4times.png Graphic file (type png)
  <use bilder/4times.png>)
 (./tex/rrd.tex
@@ -600,7 +601,7 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[11 <./bilder/df-graph.png (PNG copy)>]
+[11 <./bilder/4times.png (PNG copy)>]
 <bilder/rrd.png, id=207, 245.2362pt x 162.8484pt>
 File: bilder/rrd.png Graphic file (type png)
  <use bilder/rrd.png>
@@ -610,37 +611,30 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[12 <./bilder/4times.png (PNG copy)>]
-<bilder/all4.png, id=216, 997.7275pt x 562.1pt>
+[12 <./bilder/rrd.png>] <bilder/all4.png, id=218, 997.7275pt x 562.1pt>
 File: bilder/all4.png Graphic file (type png)
- <use bilder/all4.png>)
-(./tex/plugins.tex
+
+<use bilder/all4.png>) (./tex/plugins.tex
 File: bilder/dhbw.png Graphic file (type png)
  <use bilder/dhbw.png>
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[13 <./bilder/rrd.png>] <bilder/gap.png, id=226, 496.85625pt x 337.26pt>
+[13 <./bilder/all4.png (PNG copy)>]
+<bilder/gap.png, id=226, 496.85625pt x 337.26pt>
 File: bilder/gap.png Graphic file (type png)
-
-<use bilder/gap.png>
-File: bilder/dhbw.png Graphic file (type png)
- <use bilder/dhbw.png>
-Overfull \vbox (0.82524pt too high) has occurred while \output is active []
-
-
-[14 <./bilder/all4.png (PNG copy)>]
-<bilder/lns.png, id=233, 554.07pt x 13.04875pt>
-File: bilder/lns.png Graphic file (type png)
- <use bilder/lns.png>
+ <use bilder/gap.png>
 File: bilder/dhbw.png Graphic file (type png)
 
 <use bilder/dhbw.png>
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[15 <./bilder/gap.png (PNG copy)> <./bilder/lns.png>]
-<bilder/lnw.png, id=240, 596.2275pt x 13.04875pt>
+[14 <./bilder/gap.png (PNG copy)>]
+<bilder/lns.png, id=233, 554.07pt x 13.04875pt>
+File: bilder/lns.png Graphic file (type png)
+ <use bilder/lns.png>
+<bilder/lnw.png, id=234, 596.2275pt x 13.04875pt>
 File: bilder/lnw.png Graphic file (type png)
  <use bilder/lnw.png>
 File: bilder/dhbw.png Graphic file (type png)
@@ -649,13 +643,13 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[16 <./bilder/lnw.png>]
+[15 <./bilder/lns.png> <./bilder/lnw.png>]
 Overfull \hbox (39.04146pt too wide) in paragraph at lines 58--58
 []\T1/aer/m/n/12 ^^RDie Ma-na-ge-ment In-for-ma-ti-on Ba-se (MIB) dient als SNM
 P-Informations-
  []
 
-<bilder/mib.png, id=248, 310.2792pt x 151.767pt>
+<bilder/mib.png, id=244, 310.2792pt x 151.767pt>
 File: bilder/mib.png Graphic file (type png)
  <use bilder/mib.png>
 File: bilder/dhbw.png Graphic file (type png)
@@ -664,15 +658,15 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[17 <./bilder/mib.png>] <bilder/snmp.png, id=260, 222.1098pt x 119.7273pt>
+[16 <./bilder/mib.png>] <bilder/snmp.png, id=256, 222.1098pt x 119.7273pt>
 File: bilder/snmp.png Graphic file (type png)
 
 <use bilder/snmp.png>
-<bilder/snmp-simple.png, id=263, 659.46375pt x 13.04875pt>
+<bilder/snmp-simple.png, id=259, 659.46375pt x 13.04875pt>
 File: bilder/snmp-simple.png Graphic file (type png)
 
 <use bilder/snmp-simple.png>
-<bilder/snmp-complex.png, id=264, 737.75626pt x 15.05624pt>
+<bilder/snmp-complex.png, id=260, 737.75626pt x 15.05624pt>
 File: bilder/snmp-complex.png Graphic file (type png)
 
 <use bilder/snmp-complex.png>
@@ -681,14 +675,14 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[18 <./bilder/snmp.png> <./bilder/snmp-simple.png> <./bilder/snmp-complex.png (
+[17 <./bilder/snmp.png> <./bilder/snmp-simple.png> <./bilder/snmp-complex.png (
 PNG copy)>]))
 File: bilder/dhbw.png Graphic file (type png)
  <use bilder/dhbw.png>
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[19] (./tex/umsetzung.tex <bilder/ootb.png, id=281, 378.41376pt x 256.96pt>
+[18] (./tex/umsetzung.tex <bilder/ootb.png, id=276, 378.41376pt x 256.96pt>
 File: bilder/ootb.png Graphic file (type png)
 
 <use bilder/ootb.png>
@@ -697,8 +691,8 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[20 <./bilder/ootb.png (PNG copy)>]
-<bilder/suggest.png, id=288, 693.59125pt x 448.67625pt>
+[19 <./bilder/ootb.png (PNG copy)>]
+<bilder/suggest.png, id=284, 693.59125pt x 448.67625pt>
 File: bilder/suggest.png Graphic file (type png)
 
 <use bilder/suggest.png>
@@ -707,8 +701,8 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[21 <./bilder/suggest.png (PNG copy)>]
-<bilder/du1.png, id=295, 266.9975pt x 83.31125pt>
+[20 <./bilder/suggest.png (PNG copy)>]
+<bilder/du1.png, id=291, 266.9975pt x 83.31125pt>
 File: bilder/du1.png Graphic file (type png)
  <use bilder/du1.png>
 File: bilder/dhbw.png Graphic file (type png)
@@ -717,11 +711,11 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[22 <./bilder/du1.png (PNG copy)>]
+[21 <./bilder/du1.png (PNG copy)>]
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
-<bilder/du2.png, id=303, 483.8075pt x 41.15375pt>
+<bilder/du2.png, id=299, 483.8075pt x 41.15375pt>
 File: bilder/du2.png Graphic file (type png)
  <use bilder/du2.png>
 File: bilder/dhbw.png Graphic file (type png)
@@ -730,7 +724,7 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[23 <./bilder/du2.png (PNG copy)>]
+[22 <./bilder/du2.png (PNG copy)>]
 (/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )
@@ -739,7 +733,7 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[24] <bilder/du-graph.png, id=348, 496.85625pt x 277.035pt>
+[23] <bilder/du-graph.png, id=344, 496.85625pt x 277.035pt>
 File: bilder/du-graph.png Graphic file (type png)
 
 <use bilder/du-graph.png>)
@@ -748,7 +742,7 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[25 <./bilder/du-graph.png (PNG copy)>] (./tex/nagios.tex
+[24 <./bilder/du-graph.png (PNG copy)>] (./tex/nagios.tex
 Overfull \hbox (9.2282pt too wide) in paragraph at lines 17--20
 []\T1/aer/m/n/12 Dabei wird, an-statt der Alar-mie-rung durch Emails, ein pas-s
 i-ves Check-Ergebnis
@@ -759,7 +753,7 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[26] <bilder/nsca.png, id=367, 584.1825pt x 321.2pt>
+[25] <bilder/nsca.png, id=363, 584.1825pt x 321.2pt>
 File: bilder/nsca.png Graphic file (type png)
  <use bilder/nsca.png>
 Overfull \hbox (7.91895pt too wide) in paragraph at lines 33--34
@@ -772,12 +766,12 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[27 <./bilder/nsca.png (PNG copy)>]
-<bilder/nagiosgraph.png, id=378, 476.78125pt x 196.735pt>
+[26 <./bilder/nsca.png (PNG copy)>]
+<bilder/nagiosgraph.png, id=374, 476.78125pt x 196.735pt>
 File: bilder/nagiosgraph.png Graphic file (type png)
 
 <use bilder/nagiosgraph.png>
-<bilder/drraw.png, id=379, 683.55376pt x 334.24875pt>
+<bilder/drraw.png, id=375, 683.55376pt x 334.24875pt>
 File: bilder/drraw.png Graphic file (type png)
  <use bilder/drraw.png>
 File: bilder/dhbw.png Graphic file (type png)
@@ -786,11 +780,11 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[28 <./bilder/nagiosgraph.png> <./bilder/drraw.png>]
-<bilder/nagios.png, id=388, 820.06375pt x 344.28625pt>
+[27 <./bilder/nagiosgraph.png> <./bilder/drraw.png>]
+<bilder/nagios.png, id=384, 820.06375pt x 344.28625pt>
 File: bilder/nagios.png Graphic file (type png)
  <use bilder/nagios.png>
-<bilder/perf2rdd.png, id=389, 501.875pt x 135.50626pt>
+<bilder/perf2rdd.png, id=385, 501.875pt x 135.50626pt>
 File: bilder/perf2rdd.png Graphic file (type png)
 
 <use bilder/perf2rdd.png>)
@@ -799,14 +793,14 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[29 <./bilder/nagios.png> <./bilder/perf2rdd.png (PNG copy)>]
+[28 <./bilder/nagios.png> <./bilder/perf2rdd.png (PNG copy)>]
 (./tex/ausblick.tex)
 File: bilder/dhbw.png Graphic file (type png)
  <use bilder/dhbw.png>
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[30] (./stud2.lof)
+[29] (./stud2.lof)
 \tf@lof=\write6
 \openout6 = `stud2.lof'.
 
@@ -815,7 +809,7 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[31] (./stud2.lot)
+[30] (./stud2.lot)
 \tf@lot=\write7
 \openout7 = `stud2.lot'.
 
@@ -824,7 +818,7 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[32] (./stud2.lol)
+[31] (./stud2.lol)
 \tf@lol=\write8
 \openout8 = `stud2.lol'.
 
@@ -833,7 +827,7 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[33]
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
@@ -858,19 +852,19 @@ File: bilder/dhbw.png Graphic file (type png)
 Overfull \vbox (0.82524pt too high) has occurred while \output is active []
 
 
-[34] (./stud2.aux)
+[33] (./stud2.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8891 strings out of 94074
- 119417 string characters out of 1165153
- 228558 words of memory out of 1500000
- 11751 multiletter control sequences out of 10000+50000
- 40215 words of font info for 88 fonts, out of 1200000 for 2000
+ 8893 strings out of 94074
+ 119434 string characters out of 1165153
+ 228557 words of memory out of 1500000
+ 11752 multiletter control sequences out of 10000+50000
+ 42478 words of font info for 91 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 36i,16n,51p,516b,1493s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 36i,16n,51p,525b,1493s stack positions out of 5000i,500n,6000p,200000b,5000s
 pdfTeX warning (dest): name{Hfootnote.7} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -893,16 +887,17 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
 </usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf-t
-exlive/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/b
-luesky/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr7.pfb><
-/usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf-texl
-ive/fonts/type1/bluesky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/blu
-esky/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmti12.pfb>
-</usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmtt12.pfb></usr/share/texmf-t
-exlive/fonts/type1/bluesky/cm/cmtt8.pfb>
-Output written on stud2.pdf (34 pages, 2551104 bytes).
+exlive/fonts/type1/bluesky/cm/cmbxsl10.pfb></usr/share/texmf-texlive/fonts/type
+1/bluesky/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr12.p
+fb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr7.pfb></usr/share/texmf-
+texlive/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/b
+luesky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pf
+b></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf
+-texlive/fonts/type1/bluesky/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type
+1/bluesky/cm/cmtt8.pfb>
+Output written on stud2.pdf (33 pages, 2555345 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
- 152 named destinations out of 1000 (max. 131072)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 150 named destinations out of 1000 (max. 131072)
  293 words of extra memory for PDF output out of 10000 (max. 10000000)
 
