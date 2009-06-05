@@ -1,25 +1,25 @@
 \select@language {ngerman}
 \contentsline {figure}{\numberline {1}{\ignorespaces Munin Master-Node-Konzept}}{6}{figure.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Beispielhafte Ausf\IeC {\"u}hrung eines Munin-Plugins}}{9}{figure.2}
+\contentsline {figure}{\numberline {2}{\ignorespaces Beispielhafte Ausf\IeC {\"u}hrung eines Munin-Plugins}}{10}{figure.2}
 \contentsline {figure}{\numberline {3}{\ignorespaces Reale Werte des Systemtools \textit {df}}}{10}{figure.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Visualisierung der Werte des Munin-Plugins \textit {df}}}{10}{figure.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Visualisierung der Messwerte in verschiedenen Zeitaufl\IeC {\"o}sungen}}{11}{figure.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Modell der Round-Robin-Datenbanken}}{12}{figure.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces \IeC {\"U}bersicht der \textit {Uptime}}}{13}{figure.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Fehlende Messwerte werden als L\IeC {\"u}cke dargestellt}}{14}{figure.8}
+\contentsline {figure}{\numberline {4}{\ignorespaces Visualisierung der Werte des Munin-Plugins \textit {df}}}{11}{figure.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Visualisierung der Messwerte in verschiedenen Zeitaufl\IeC {\"o}sungen}}{12}{figure.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Modell der Round-Robin-Datenbanken}}{13}{figure.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces \IeC {\"U}bersicht der \textit {Uptime}}}{14}{figure.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Fehlende Messwerte werden als L\IeC {\"u}cke dargestellt}}{15}{figure.8}
 \contentsline {figure}{\numberline {9}{\ignorespaces Beispielhafte Verlinkung eines Munin-Plugins}}{15}{figure.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Beispielhafte Verlinkung eines Wildcard-Plugins}}{15}{figure.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Struktur der Management Information Base (MIB)}}{16}{figure.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Beispielhafter Zugriff auf SNMP-f\IeC {\"a}hige Ger\IeC {\"a}te}}{17}{figure.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Beispielhafte Verlinkung eines SNMP-Plugins}}{17}{figure.13}
-\contentsline {figure}{\numberline {14}{\ignorespaces Beispielhafte Verlinkung eines Wildcard-SNMP-Plugins}}{17}{figure.14}
-\contentsline {figure}{\numberline {15}{\ignorespaces Bereits nach der Installation verf\IeC {\"u}gbare Munin-Graphen}}{19}{figure.15}
-\contentsline {figure}{\numberline {16}{\ignorespaces Automatische \IeC {\"U}berpr\IeC {\"u}fung der Munin-Plugins}}{20}{figure.16}
-\contentsline {figure}{\numberline {17}{\ignorespaces Ermittlung des Speicherplatzbedarf des Ordners \textit {/test}}}{21}{figure.17}
-\contentsline {figure}{\numberline {18}{\ignorespaces Ausf\IeC {\"u}hrung des Testplugins}}{22}{figure.18}
-\contentsline {figure}{\numberline {19}{\ignorespaces Fertiger Muningraph des Testskriptes}}{24}{figure.19}
-\contentsline {figure}{\numberline {20}{\ignorespaces Zusammenarbeit von Munin und Nagios}}{26}{figure.20}
-\contentsline {figure}{\numberline {21}{\ignorespaces Visualisierung der Performancedaten mit Nagiosgraph}}{27}{figure.21}
-\contentsline {figure}{\numberline {22}{\ignorespaces Visualisierung der Performancedaten mit drraw}}{27}{figure.22}
-\contentsline {figure}{\numberline {23}{\ignorespaces Visualisierung der Performancedaten mit NagiosGrapher}}{28}{figure.23}
-\contentsline {figure}{\numberline {24}{\ignorespaces Visualisierung der Performancedaten mit Perf2rrd}}{28}{figure.24}
+\contentsline {figure}{\numberline {10}{\ignorespaces Beispielhafte Verlinkung eines Wildcard-Plugins}}{16}{figure.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Struktur der Management Information Base (MIB)}}{17}{figure.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Beispielhafter Zugriff auf SNMP-f\IeC {\"a}hige Ger\IeC {\"a}te}}{18}{figure.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Beispielhafte Verlinkung eines SNMP-Plugins}}{18}{figure.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Beispielhafte Verlinkung eines Wildcard-SNMP-Plugins}}{18}{figure.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces Bereits nach der Installation verf\IeC {\"u}gbare Munin-Graphen}}{20}{figure.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces Automatische \IeC {\"U}berpr\IeC {\"u}fung der Munin-Plugins}}{21}{figure.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces Ermittlung des Speicherplatzbedarf des Ordners \textit {/test}}}{22}{figure.17}
+\contentsline {figure}{\numberline {18}{\ignorespaces Ausf\IeC {\"u}hrung des Testplugins}}{23}{figure.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Fertiger Muningraph des Testskriptes}}{25}{figure.19}
+\contentsline {figure}{\numberline {20}{\ignorespaces Zusammenarbeit von Munin und Nagios}}{27}{figure.20}
+\contentsline {figure}{\numberline {21}{\ignorespaces Visualisierung der Performancedaten mit Nagiosgraph}}{28}{figure.21}
+\contentsline {figure}{\numberline {22}{\ignorespaces Visualisierung der Performancedaten mit drraw}}{28}{figure.22}
+\contentsline {figure}{\numberline {23}{\ignorespaces Visualisierung der Performancedaten mit NagiosGrapher}}{29}{figure.23}
+\contentsline {figure}{\numberline {24}{\ignorespaces Visualisierung der Performancedaten mit Perf2rrd}}{29}{figure.24}

@@ -1,9 +1,10 @@
 \section{Umsetzung}
 \label{umsetzung}
-%Wenn die verwendete Linux-Distributon einen Paketmanager unterstützt verläuft die Installation der Anwendung einfach und ohne Probleme.
-Die Installation der Anwendung verläuft einfach und ohne Probleme.
+%Wenn die verwendete Linux-Distributon einen Paketmanager unterstützt 
+Unterstützt die verwendete Linux-Distribution einen Paketmanager verläuft die Installation der Anwendung einfach und ohne Probleme.
+%Die Installation der Anwendung verläuft einfach und ohne Probleme.
 Die hier als Testserver eingesetzte Ubuntu-Distribution verknüpft automatisch die Munin-Webseiten mit dem Webserver und verlinkt bereits die ersten verwendbaren Munin-Plugins.
-Daher sind sofort nach der Installation einige Graphen verfügbar, siehe Abbildung \ref{ootb}.
+Aus diesem Grund sind sofort nach der Installation einige Graphen verfügbar, siehe Abbildung \ref{ootb}.
 
 \begin{figure}[ht]
 	\centering
@@ -18,7 +19,7 @@ Zum Beispiel wurde in der oberen Abbildung von Munin der Mailserver \textit{post
 Wie bereits in Kapitel \ref{plugins} beschrieben können weitere mitgelieferte Munin-Plugins in das entsprechende Service-Verzeichnis verlinkt und dabei ggf. mit Parametern ausgestatten werden, damit Munin zusätzlich diese Graphen erstellt und deren Werte aktualisiert und abspeichert.
 
 Dabei gibt es noch eine zusätzliche Hilfe durch die Plugins, sofern sie sich an den Munin-Plugin-Standard halten.
-Solche Skripte überprüfen selbständig bei ihrer Ausführung weshalb sie nicht genutzt werden können oder sogar mit welchen Parametern sie funktionieren würden.
+Solche Skripte überprüfen selbständig bei ihrer Ausführung unter welcher Bedingung sie nicht genutzt werden können oder mit welchen Parametern sie funktionieren würden.
 
 Diese hilfreiche Unterstützung erhält man durch die Ausführung des folgenden Befehls:
 
@@ -34,13 +35,13 @@ Anhand dieser Informationen kann herausgefunden werden, weshalb ein Plugin nicht
 \subsection{Erstellen eines eigenen Munin-Plugins}
 
 Die zum Zeitpunkt dieser Arbeit mitgelieferten 132 Munin-Plugins unterstützen eine Vielzahl an verschiedenen Überwachungsmöglichkeiten.
-Jedoch kann es auch sein, dass ein gewünschtes Element oder Detail nicht von den mitgelieferten Plugins beachtet wird.
+Es kann jedoch auch sein, dass ein gewünschtes Element oder Detail nicht von den mitgelieferten Plugins beachtet wird.
 Dann bietet es sich an auf der MuninExchange\footnote{http://muninexchange.projects.linpro.no/} Internetseite nach bereits entwickelten, passenden Munin-Plugins zu stöbern.
 
 Eine weitere Möglichkeit besteht darin das gewünschte Skript selbst zu entwickeln.
 Da der Aufbau eines Munin-Plugins recht primitiv und klein ausfallen kann, benötigt man keine umfangreichen Programmierkenntnisse um erfolgreich ein funktionierendes Skript zu entwickeln.
 
-Im folgenden soll als Beispiel eine einfache Speicherplatzüberwachung eines Ordners mit Munin realisiert werden.
+Im Folgenden soll als Beispiel eine einfache Speicherplatzüberwachung eines Ordners mit Munin realisiert werden.
 
 Dafür wird das bereits vorhandene Systemtool \textit{du} verwendet.
 Der Speicherplatzbedarf eines Ordners lässt sich dann folgendermaßen ermitteln:
@@ -89,7 +90,7 @@ Nach der Verlinkung in das entsprechende Service-Verzeichnis gibt das Skriptes f
 Mit dieser Ausgabe kann \pictext{munin-update} die Messwerte ermitteln und speichern.
 
 Für die Visualisierung dieser Messwerte benötigt Munin zusätzlich noch Informationen, wie der Graph auszusehen hat.
-Um diese Informationen zu erhalten, ruft Munin die Plugins mit dem Parameter \textit{config} auf; daher muss das Plugin die entsprechende Werte bei diesem Parameteraufruf liefern.
+Um diese Informationen zu erhalten, ruft Munin die Plugins mit dem Parameter \textit{config} auf; daher muss auch dieses Plugin die entsprechende Werte bei diesem Parameteraufruf liefern.
 
 Folgende Informationen werden für das Testplugin benötigt:
 
