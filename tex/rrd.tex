@@ -3,7 +3,7 @@ Round-Robin-Datenbanken sind nicht mit bekannten Datenbanksystemen vergleichbar,
 Daher scheidet der Zugriff per SQL, Texteditor oder über einen Netzwerkport aus.
 Um auf Round-Robin-Datenbanken zuzugreifen müssen die dafür entwickelten RRD-Tools verwendet werden.
 Diese nehmen die aktuellen Messwerte entgegen und schreiben für jeden Messinterval einen Wert in eine Binärdatei.
-Aus den gesammelten Datenbestand können dann die Werte visualisiert oder Statistiken erzeugt werden.
+Aus dem gesammeltem Datenbestand können dann die Werte visualisiert oder Statistiken erzeugt werden.
 Dieser Datenbestand besteht aus sogenannten Round-Robin-Archives.
 Dabei handelt es sich um Ableitungen aus den Primärdateien, die mit Hilfe statistischer Auswertungen ermittelt und für die festgelegten Zeitintervalle komprimiert werden.
 Die gesamte Anzahl der gespeicherten Datenwerte steht bereits bei der Erzeugung der RRD fest.
@@ -21,7 +21,7 @@ Munin verwendet dieses RRAs als hochauflösende Archive, die die Messwerte des a
 %Siehe hierfür Abbildung [?].
 Die Komprimierung wird so realisiert, dass Mittelwerte aus der feineren Zeitauflösung errechnet werden und zusätzlich noch spezielle Archivierungsregeln beim Erstellen der RRD-Datei berücksichtigt werden.
 
-Aus diesen Datensätzen mit verschiedenen Zeitauflösungen erstellt Munin automatisch Graphen über die entsprechenden Zeiträume, siehe Abbildung \ref{all4}.
+Aus diesen Datensätzen mit unterschiedlichen Zeitauflösungen erstellt Munin automatisch Graphen über die entsprechenden Zeiträume, siehe Abbildung \ref{all4}.
 
 \begin{figure}[ht]
 	\centering
