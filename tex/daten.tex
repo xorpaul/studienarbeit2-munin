@@ -1,6 +1,6 @@
 \subsection{Einsammeln der Daten}
 Das periodisch ausgeführte Perlskript \pictext{munin-update} kümmert sich um das Abholen neuer Messwerte von den Nodes.
-Dazu wird zuerst die Datei \pictext{munin.conf} geparst, um die zu überwachenden Nodes zu ermitteln.
+Dazu wird zunächst die Datei \pictext{munin.conf} geparst, um die zu überwachenden Nodes zu ermitteln.
 
 Ein Eintrag für einen Node-Host in dieser Datei sieht folgendermaßen aus:
 
@@ -28,6 +28,7 @@ Dafür wird der Name des Plugins mit den Suffixen \textit{.warning} und \textit{
 Im obigen Beispiel wird \pictext{df} für den freien Festplattenspeicherplatz mit dem Schwellwert von 20\% für Warnungen und 10\% als kritischen Wert für den Host definiert.
 
 Unter dem Attribut \textit{contacts} werden die Kontaktnamen angegeben, die bei einer Überschreitung eines Schwellwerteres kontaktiert werden sollen.
+Dabei muss erwähnt werden, dass diese Überschreitung bei allen Plugins zur Benachrichtigung dieser Kontakte führt.
 %Hierbei gibt es zu sagen, dass diese Überschreitung bei egal welchem Plugin für die Benachrichtigung dieser Kontakte führt.
 
 Soll ein Kontakt nur bei einem bestimmten Plugin benachrichtigt werden, muss es analog zu der Schwellwertdefinition mit dem Pluginnamen und dem Suffix \textit{.contacts} explizit angegeben werden. Hier wird der Kontakt \textit{lang} nur bei einer Überschreitung des Plugins \textit{ping\_unilabad} benachrichtigt.
@@ -100,7 +101,7 @@ bis zu 450 Tagen & 1 Tag \\
 \footnotetext{Quelle: \cite{Mu08} S. 24}
 
 
-In der Abbildung \ref{4times} konnte der \pictext{munin-node} noch keinen kompletten Tag Messwerte sammeln, weshalb die Jahresübersicht noch keine Messwerte liefern kann und nur den Platzhalterwert \textit{nan} (für nicht definiert) enthält.
+In der Abbildung \ref{4times} konnte der \pictext{munin-node} noch keinen kompletten Tag Messwerte sammeln, weshalb die Jahresübersicht noch keine Messwerte liefern kann und nur mit dem Platzhalterwert \textit{nan} (für nicht definiert) belegt ist.
 
 \begin{figure}[ht]
 	\centering
